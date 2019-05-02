@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { createProject } from '../../store/actions/projectActions' 
+import { createProject } from '../../store/actions/projectActions'
 import { connect } from 'react-redux'
 
 class CreateProject extends Component {
@@ -15,7 +15,7 @@ class CreateProject extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state)
+    this.props.createProject(this.state)
   }
 
   render() {

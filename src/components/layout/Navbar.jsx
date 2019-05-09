@@ -10,7 +10,7 @@ const Navbar = ({ auth }) => {
     <nav className="nav-wrapper grey darken-3">
       <div className="container">
         <Link to="/" className="brand-logo">
-          MarioPlan
+          SonicPlan
         </Link>
         {links}
       </div>
